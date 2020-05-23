@@ -18,7 +18,7 @@ __It's very simple to use__
 **A little example :**
 
 ```javascript
-const MusicBot = require("discord-music"); // Require the module
+const MusicBot = require("discord-music-system"); // Require the module
 
 const bot = new MusicBot({ // Create the bot
     token: 'Some Discord Token', // You can find teh token at https://discord.com/developers/applications/
