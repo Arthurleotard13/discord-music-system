@@ -1,4 +1,4 @@
-The discord-music is a very simple and powerful Discord.Js Music module.
+The discord-music-system is a very simple and powerful Discord.Js Music module.
 
 **There are few commands**
 - `play [search term || url]`
