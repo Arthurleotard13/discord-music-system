@@ -1,4 +1,4 @@
-const MusicBot = require("discord-music"); // Require the module
+const MusicBot = require("discord-music-system"); // Require the module
 const config = require('./example-config.json'); // Require the config.json
 
 const bot = new MusicBot({
