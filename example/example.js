@@ -1,4 +1,4 @@
-const MusicBot = require("discord-music"); // Require teh module
+const MusicBot = require("discord-music-system"); // Require teh module
 
 const bot = new MusicBot({ // Create the bot
     token: 'Some Discord Token', // You can find teh token at https://discord.com/developers/applications/
