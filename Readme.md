@@ -1,5 +1,5 @@
 
-[![NPM](https://nodei.co/npm/<package>.png)](https://nodei.co/npm/discord-music-system.png?downloads=true&downloadRank=true&stars=true)
+[![NPM](https://nodei.co/npm/discord-music-system.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/discord-music-system/)
 
 The discord-music-system is a very simple and powerful Discord.Js Music module.
 
