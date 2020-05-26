@@ -1,3 +1,6 @@
+
+[![NPM](https://nodei.co/npm/<package>.png)](https://nodei.co/npm/discord-music-system.png?downloads=true&downloadRank=true&stars=true)
+
 The discord-music-system is a very simple and powerful Discord.Js Music module.
 
 **There are few commands**
@@ -8,8 +11,8 @@ The discord-music-system is a very simple and powerful Discord.Js Music module.
 - `help`
 - `skip`
 - `np`
-- `remove`
-- `volume`
+- `remove [song number in the queue]`
+- `volume [0 - 100]`
 - `queue`
 
 
@@ -21,9 +24,10 @@ __It's very simple to use__
 const MusicBot = require("discord-music-system"); // Require the module
 
 const bot = new MusicBot({ // Create the bot
-    token: 'Some Discord Token', // You can find teh token at https://discord.com/developers/applications/
+    token: 'Some Discord Token', // You can find the token at https://discord.com/developers/applications/
     ytApiKey: 'A random YouTube API Key', // Video to explain how to get it: https://www.youtube.com/watch?v=VqML5F8hcRQ
-    prefix: 'I think the prefix goes here' // Example: /
+    prefix: 'I think the prefix goes here', // Example: /
+    game: 'Some funny game' // Example: /help
 });
 
 bot.run(); // Run the bot
