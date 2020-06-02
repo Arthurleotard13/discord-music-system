@@ -34,7 +34,7 @@ bot.run(); // Run the bot
 ```
 
 **Image**
-![](./example/image-example.png)
+![](https://raw.githubusercontent.com/RemyK888/discord-music-system/master/example/image-example.png)
 
 
 If you have any problems, you can contact : RemyK#3876
