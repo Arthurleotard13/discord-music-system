@@ -1,7 +1,7 @@
 'use strict';
 
 const ytdl = require('ytdl-core');
-const {YouTube} = require('popyt');
+const { YouTube } = require('popyt');
 
 const AddSongEmbed = require('../embeds/add-song-embed');
 const ErrorEmbed = require('../embeds/error-embed');
@@ -21,14 +21,14 @@ const play = {
 		const permissions = channel.permissionsFor(message.client.user);
 		if (!permissions.has('CONNECT')) return message.channel.send(
 			new ErrorEmbed('I cannot connect to your voice channel, make sure I have the proper permissions!')
-			);
+		);
 		if (!permissions.has('SPEAK')) return message.channel.send(
 			new ErrorEmbed('I cannot speak in this voice channel, make sure I have the proper permissions!')
-			);
+		);
 
-		if(!args[0]) {
+		if (!args[0]) {
 			return message.channel.send(
-			new ErrorEmbed('You have to enter a search term.')
+				new ErrorEmbed('You have to enter a search term.')
 			);
 		};
 
@@ -90,9 +90,9 @@ const play = {
 				})
 				.on('error', error => console.error(error));
 			dispatcher.setVolumeLogarithmic(queue.volume / 5);
-			if(!serverQueue)
-			queue.textChannel.send(new AddSongEmbed(song))
-			queue.textChannel.send(new PlaySongEmbed(song));
+			if (!serverQueue) {
+				queue.textChannel.send(new PlaySongEmbed(song));
+			};
 		};
 
 		try {
